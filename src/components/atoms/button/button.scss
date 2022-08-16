@@ -18,24 +18,20 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-}
 
-.button:hover {
-  color: $white;
-  background: $orange_bistre;
-  text-decoration: none;
-}
-
-.button {
   @media screen and (max-width: $breakpoint-lg) {
     width: 150px;
     height: 55px;
-    padding: 0px 16px;
   }
 
   @media screen and (max-width: $breakpoint-md) {
     width: 180px;
     height: 45px;
-    padding: 0px 16px;
+  }
+
+  &:hover {
+    color: $white;
+    background: $orange_bistre;
+    text-decoration: none;
   }
 }
