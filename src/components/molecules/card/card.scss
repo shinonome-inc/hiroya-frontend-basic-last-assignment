@@ -1,0 +1,63 @@
+@use "../../variables" as *;
+@use "../../atoms/button/button.scss" as *;
+
+.card {
+  height: 382.4109802246094px;
+  width: 540px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 6px;
+  width: 91px;
+  height: 29px;
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $fontsize-l;
+  line-height: 29px;
+  display: flex;
+  color: $orange_bistre;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.space {
+  border-radius: 0px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 75px solid $white;
+  border-right: 75px solid transparent;
+  border-left: 75px solid $white;
+  border-bottom: 75px solid transparent;
+}
+
+.footer {
+  height: 183px;
+  width: 540px;
+  left: 0px;
+  top: 384px;
+  border-radius: 0px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  background: $white_smoke;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: auto;
+}
+.button {
+  margin: auto;
+}
