@@ -2,9 +2,12 @@
 
 .news {
   background-color: #e5e5e5;
+  width: 460px;
+  height: 595px;
 
   .news-title {
     display: flex;
+    height: 89px;
 
     .news-title-news {
       font-family: "Noto Serif JP";
@@ -15,6 +18,9 @@
     .news-title-subtitle {
       font-family: "Noto Sans JP";
       font-size: 16px;
+      position: relative;
+      left: 16px;
+      top: 10px;
     }
   }
 
@@ -23,12 +29,50 @@
     padding-left: 0px;
     list-style: none;
     background-color: $white;
+    height: 421px;
 
-    .news-link {
+    .news-content-link {
       .news-content {
-        border: solid 1px;
-        height: 5px;
+        border: solid $gray_gainsboro 1px;
+        height: 84px;
+        transition-timing-function: ease;
+        transition: 0.2s;
+
+        .news-date {
+          color: $gray_nobel;
+          font-size: $fontsize-xs;
+          position: relative;
+          top: 20px;
+          left: 20px;
+        }
+        .news-detail {
+          color: $black;
+          font-size: $fontsize-m;
+          position: relative;
+          top: 10px;
+          left: 20px;
+          max-width: 414px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &:hover {
+          color: $white;
+          background: $gray_gainsboro;
+        }
       }
+    }
+  }
+
+  .information-list {
+    height: 85px;
+
+    .information-list-text {
+      position: relative;
+      left: 346px;
+      font-size: 14px;
+      color: $black;
+      top: 12px;
     }
   }
 }
