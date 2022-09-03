@@ -45,6 +45,7 @@
           top: 20px;
           left: 20px;
         }
+
         .news-detail {
           color: $black;
           font-size: $fontsize-m;
@@ -55,10 +56,9 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-        }
-        &:hover {
-          color: $white;
-          background: $gray_gainsboro;
+          :hover {
+            color: $orange_bistre;
+          }
         }
       }
     }
