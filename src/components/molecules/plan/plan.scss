@@ -1,14 +1,10 @@
 @use "../../variables" as *;
 
-.plan1 {
-  padding: 0px;
-}
-
-.plan2 {
+.plan:nth-child(2) {
   padding: 0px;
   border: 5px solid $orange_bistre;
   li:nth-child(1) {
-    background-color: #442606;
+    background-color: $orange_bistre;
   }
 }
 
@@ -16,26 +12,20 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0px;
   height: 69px;
-  background: #a19283;
+  background: $orange_zorba;
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
   margin: -1px 0px;
-
-  font-family: "Noto Sans JP";
-  font-style: normal;
+  font-family: $fontfamily-gothic;
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  color: $white;
 }
 
 .item1 {
@@ -45,81 +35,55 @@
   justify-content: center;
   padding: 24px 0px;
   height: 142px;
-  background: #ece9e6;
-  border: 1px solid #dddddd;
-  flex: none;
-
-  align-self: stretch;
-  flex-grow: 0;
+  background: $gray_desertStorm;
+  border: 1px solid $gray_gainsboro;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-s;
+  align-items: center;
   margin: -1px 0px;
 
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #000000;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
+  .fee {
+    display: flex;
+    font-family: $fontfamily-gothic;
+    align-items: baseline;
+  }
 
-.fee {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 58px;
-  display: flex;
+  .yen-sign {
+    font-size: $fontsize-l;
+    font-weight: 700;
+    color: $orange_bistre;
+    position: relative;
+    top: 53px;
+    width: 12px;
+    height: 29px;
+  }
 
-  color: #442606;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
+  .fee-number {
+    position: relative;
+    top: 24px;
+    width: 108px;
+    height: 58px;
+    font-weight: 700;
+    font-size: $fontsize-xxl;
+    color: $orange_bistre;
+  }
 
-.fee-detail {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  .fee-detail {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    position: relative;
+    top: 16px;
+  }
 }
 
 .item2 {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-
-  padding: 20px 10px;
   height: 60px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
+  border: 1px solid $gray_gainsboro;
   margin: -1px 0px;
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-s;
   display: flex;
   align-items: center;
-  text-align: center;
-  color: #000000;
-  flex: none;
-
-  flex-grow: 0;
 }
