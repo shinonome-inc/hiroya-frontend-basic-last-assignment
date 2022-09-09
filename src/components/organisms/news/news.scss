@@ -56,11 +56,14 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          :hover {
-            color: $orange_bistre;
-          }
+        }
+        &:hover .news-detail {
+          color: $orange_bistre;
         }
       }
+    }
+    &:hover .news-content-link {
+      text-decoration: none;
     }
   }
 
