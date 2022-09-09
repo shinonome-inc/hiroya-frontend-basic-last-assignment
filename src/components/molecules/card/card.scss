@@ -6,8 +6,6 @@
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  left: 296px;
-  top: 24px;
 
   .card-head {
     flex: none;
@@ -20,14 +18,12 @@
       border-right: solid 150px transparent;
       position: absolute;
       top: 0px;
-      width: 0;
       z-index: 1;
     }
 
     .card-title-text {
       position: absolute;
       left: 6px;
-      width: 91px;
       height: 29px;
       font-family: $fontfamily-gothic;
       font-style: normal;
@@ -40,10 +36,8 @@
     }
 
     .card-photo-space {
-      width: 100%;
       overflow: hidden;
       .card-photo {
-        width: 100%;
         @media screen and (min-width: $breakpoint-md) {
           transition: 0.5s;
           &:hover {
@@ -52,13 +46,17 @@
         }
       }
     }
+  }
 
-    .card-body {
-      flex-direction: column;
-      align-items: center;
-      padding: 32px;
-      height: 183px;
-      background: $white_smoke;
+  .card-body {
+    padding: 32px;
+    height: 183px;
+    background: $white_smoke;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    .card-body-text {
+      text-align: center;
     }
   }
 }
