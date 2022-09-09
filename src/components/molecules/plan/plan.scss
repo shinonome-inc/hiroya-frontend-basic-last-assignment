@@ -8,6 +8,9 @@
   }
 }
 
+.plan {
+}
+
 .plan-title {
   display: flex;
   flex-direction: row;
@@ -33,7 +36,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px 0px;
   height: 142px;
   background: $gray_desertStorm;
   border: 1px solid $gray_gainsboro;
@@ -41,8 +43,11 @@
   font-size: $fontsize-s;
   align-items: center;
   margin: -1px 0px;
+  padding: 20px 10px;
 
   .fee {
+    position: relative;
+    top: 24px;
     display: flex;
     font-family: $fontfamily-gothic;
     align-items: baseline;
@@ -58,14 +63,15 @@
     height: 29px;
   }
 
-  .fee-number {
-    position: relative;
-    top: 24px;
+  .fee-price {
     width: 108px;
     height: 58px;
     font-weight: 700;
     font-size: $fontsize-xxl;
     color: $orange_bistre;
+  }
+  .fee-price::first-letter {
+    font-size: $fontsize-l;
   }
 
   .fee-detail {
@@ -86,4 +92,6 @@
   font-size: $fontsize-s;
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
