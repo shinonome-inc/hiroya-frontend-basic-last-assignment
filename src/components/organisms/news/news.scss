@@ -1,7 +1,6 @@
 @use "../../variables" as *;
 
 .news {
-  background-color: #e5e5e5;
   width: 460px;
   height: 595px;
 
@@ -11,16 +10,15 @@
 
     .news-title-news {
       font-family: "Noto Serif JP";
-      font-size: 40px;
+      font-size: $fontsize-xxl;
       position: relative;
     }
 
     .news-title-subtitle {
       font-family: "Noto Sans JP";
-      font-size: 16px;
-      position: relative;
-      left: 16px;
-      top: 10px;
+      font-size: $fontsize-m;
+      margin-left: 16px;
+      margin-top: 17px;
     }
   }
 
@@ -30,9 +28,11 @@
     list-style: none;
     background-color: $white;
     height: 421px;
+    margin-bottom: 0;
 
     .news-content-link {
       .news-content {
+        margin-top: -1px;
         border: solid $gray_gainsboro 1px;
         height: 84px;
         transition-timing-function: ease;
@@ -69,13 +69,26 @@
 
   .information-list {
     height: 85px;
+    text-align: right;
+    margin-top: 14px;
 
-    .information-list-text {
-      position: relative;
-      left: 346px;
-      font-size: 14px;
-      color: $black;
-      top: 12px;
+    .news-and-events-more {
+      align-self: flex-end;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: $fontsize-s;
+      transition: color 0.2s ease;
+      display: inline-flex;
+
+      &:hover {
+        color: $gray_nobel;
+        text-decoration: none;
+      }
+
+      & > i {
+        margin-left: 16px;
+        margin-right: 0;
+      }
     }
   }
 }
