@@ -1,14 +1,14 @@
 @use "../../variables" as *;
-
+.plan {
+  margin: 0;
+  padding: 0;
+}
 .plan:nth-child(2) {
   padding: 0px;
   border: 5px solid $orange_bistre;
   li:nth-child(1) {
     background-color: $orange_bistre;
   }
-}
-
-.plan {
 }
 
 .plan-title {
@@ -53,16 +53,6 @@
     align-items: baseline;
   }
 
-  .yen-sign {
-    font-size: $fontsize-l;
-    font-weight: 700;
-    color: $orange_bistre;
-    position: relative;
-    top: 53px;
-    width: 12px;
-    height: 29px;
-  }
-
   .fee-price {
     width: 108px;
     height: 58px;
@@ -70,6 +60,7 @@
     font-size: $fontsize-xxl;
     color: $orange_bistre;
   }
+
   .fee-price::first-letter {
     font-size: $fontsize-l;
   }
