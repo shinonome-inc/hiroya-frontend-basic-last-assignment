@@ -7,12 +7,12 @@
   .message-title {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
+    margin-bottom: 6px;
   }
 
   .message-detail {
     font-size: $fontsize-s;
-    position: relative;
-    top: 6px;
+    margin: 0;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
@@ -20,10 +20,7 @@
 
     .message-title {
       font-size: $fontsize-xl;
-    }
-    .meesage-detail {
-      position: relative;
-      top: 10px;
+      margin-bottom: 10px;
     }
   }
 }
