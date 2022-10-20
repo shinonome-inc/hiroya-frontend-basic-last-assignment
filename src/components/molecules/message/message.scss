@@ -8,11 +8,13 @@
     font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
     margin-bottom: 6px;
+    line-height: 1.5;
   }
 
   .message-detail {
     font-size: $fontsize-s;
     margin: 0;
+    line-height: 2;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
@@ -21,6 +23,10 @@
     .message-title {
       font-size: $fontsize-xl;
       margin-bottom: 10px;
+    }
+
+    .message-detail {
+      line-height: 2.6;
     }
   }
 }
