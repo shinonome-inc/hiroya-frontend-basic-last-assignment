@@ -2,12 +2,18 @@
 .plan {
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
 }
 .plan:nth-child(2) {
   padding: 0px;
   border: 5px solid $orange_bistre;
+
   li:nth-child(1) {
     background-color: $orange_bistre;
+    margin: -1px;
   }
 }
 
@@ -15,13 +21,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 69px;
   background: $orange_zorba;
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
-  margin: -1px 0px;
   font-family: $fontfamily-gothic;
   font-weight: 700;
   font-size: 20px;
@@ -29,6 +33,7 @@
   display: flex;
   align-items: center;
   color: $white;
+  padding: 20px 0;
 }
 
 .item1 {
@@ -36,26 +41,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 142px;
   background: $gray_desertStorm;
   border: 1px solid $gray_gainsboro;
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   align-items: center;
-  margin: -1px 0px;
-  padding: 20px 10px;
 
   .fee {
-    position: relative;
-    top: 24px;
     display: flex;
     font-family: $fontfamily-gothic;
     align-items: baseline;
   }
 
   .fee-price {
-    width: 108px;
-    height: 58px;
+    margin-top: 24px;
+    margin-bottom: 0px;
     font-weight: 700;
     font-size: $fontsize-xxl;
     color: $orange_bistre;
@@ -68,21 +68,18 @@
   .fee-detail {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
-    position: relative;
-    top: 16px;
+    margin-top: 16px;
   }
 }
 
 .item2 {
   box-sizing: border-box;
   justify-content: center;
-  height: 60px;
   border: 1px solid $gray_gainsboro;
   margin: -1px 0px;
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 0;
 }
