@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+.about {
+  .about-img-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .about-img {
+    }
+  }
+
+  .message {
+    text-align: center;
+    padding: 32px 20px;
+
+    .message-title {
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-l;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .message-detail {
+      font-size: $fontsize-s;
+      margin: 0;
+      line-height: 2;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      padding: 52px 20px;
+
+      .message-title {
+        font-size: $fontsize-xl;
+        margin-bottom: 10px;
+      }
+
+      .message-detail {
+        line-height: 2.6;
+      }
+    }
+  }
+}
