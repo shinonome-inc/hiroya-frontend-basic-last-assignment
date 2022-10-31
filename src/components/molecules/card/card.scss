@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  border: none;
+
+  .card-head {
+    flex: none;
+    align-self: stretch;
+
+    .card-space {
+      border-top: solid 150px $white;
+      border-right: solid 150px transparent;
+      position: absolute;
+      top: 0px;
+      z-index: 1;
+      margin: -1px -1px;
+    }
+
+    .card-title-text {
+      position: absolute;
+      left: 6px;
+      height: 29px;
+      font-family: $fontfamily-gothic;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $fontsize-l;
+      line-height: 29px;
+      display: flex;
+      color: $orange_bistre;
+      z-index: 1;
+    }
+
+    .card-photo-space {
+      overflow: hidden;
+      .card-photo {
+        width: 100%;
+        @media screen and (min-width: $breakpoint-md) {
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.2, 1.2);
+          }
+        }
+      }
+    }
+  }
+
+  .card-body-background {
+    background: $white_smoke;
+    .card-body {
+      padding: 32px;
+      background-size: cover;
+      .card-body-text {
+        font-size: $fontsize-s;
+        line-height: 33px;
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .button {
+        margin: 0 auto;
+      }
+    }
+  }
+}
