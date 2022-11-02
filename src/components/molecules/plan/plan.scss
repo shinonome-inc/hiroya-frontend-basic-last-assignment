@@ -59,10 +59,11 @@
     font-weight: 700;
     font-size: $fontsize-xxl;
     color: $orange_bistre;
-  }
-
-  .fee-price::first-letter {
-    font-size: $fontsize-l;
+    &::before {
+      content: "￥";
+      font-size: $fontsize-l;
+      margin-right: 4px;
+    }
   }
 
   .fee-detail {
