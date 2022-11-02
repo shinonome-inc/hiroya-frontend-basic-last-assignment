@@ -39,17 +39,16 @@
         color: $gray_nobel;
         font-size: $fontsize-xs;
         margin-bottom: 0;
-        margin: 20px auto 0 20px;
+        margin: 14px auto 0 20px;
       }
 
       .news-detail {
         color: $black;
         font-size: $fontsize-m;
-        max-width: 414px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        margin: 10px auto 20px 20px;
+        margin: 10px auto 19px 20px;
       }
       &:hover .news-detail {
         color: $orange_bistre;
