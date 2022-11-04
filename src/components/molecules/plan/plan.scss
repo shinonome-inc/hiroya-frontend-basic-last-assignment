@@ -6,81 +6,80 @@
   @media screen and (max-width: $breakpoint-md) {
     margin-bottom: 24px;
   }
-}
-.plan:nth-child(2) {
-  padding: 0px;
-  border: 5px solid $orange_bistre;
 
-  li:nth-child(1) {
-    background-color: $orange_bistre;
-    margin: -1px;
-  }
-}
-
-.plan-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: $orange_zorba;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  font-family: $fontfamily-gothic;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  color: $white;
-  padding: 20px 0;
-}
-
-.item1 {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: $gray_desertStorm;
-  border: 1px solid $gray_gainsboro;
-  font-family: $fontfamily-gothic;
-  font-size: $fontsize-s;
-  align-items: center;
-
-  .fee {
+  .plan-title {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: $orange_zorba;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
     font-family: $fontfamily-gothic;
-    align-items: baseline;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 20px 0;
   }
 
-  .fee-price {
-    margin-top: 24px;
-    margin-bottom: 0px;
-    font-weight: 700;
-    font-size: $fontsize-xxl;
-    color: $orange_bistre;
-    &::before {
-      content: "￥";
-      font-size: $fontsize-l;
-      margin-right: 4px;
+  .plan-item1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-s;
+    align-items: center;
+
+    .plan-fee {
+      display: flex;
+      font-family: $fontfamily-gothic;
+      align-items: baseline;
+
+      .plan-fee-price {
+        margin-top: 24px;
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: $fontsize-xxl;
+        color: $orange_bistre;
+        &::before {
+          content: "￥";
+          font-size: $fontsize-l;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .plan-fee-detail {
+      font-family: $fontfamily-gothic;
+      font-size: $fontsize-s;
+      margin-top: 16px;
     }
   }
 
-  .fee-detail {
+  .plan-item2 {
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px solid $gray_gainsboro;
+    margin: -1px 0px;
     font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
-    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
   }
 }
 
-.item2 {
-  box-sizing: border-box;
-  justify-content: center;
-  border: 1px solid $gray_gainsboro;
-  margin: -1px 0px;
-  font-family: $fontfamily-gothic;
-  font-size: $fontsize-s;
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
+.plan:nth-child(2) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
+  }
 }
