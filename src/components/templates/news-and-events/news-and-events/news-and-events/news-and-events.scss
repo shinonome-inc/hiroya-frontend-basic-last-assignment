@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  width: 100%;
+  @media (min-width: $breakpoint-lg) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .news-container {
+      margin-right: 40px;
+    }
+  }
+}
+
+.events-container .event-caption h3 {
+  font-weight: 400;
+}
