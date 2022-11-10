@@ -7,7 +7,7 @@
       height: 25.7px;
       width: 150px;
       margin: 52px 0 20px;
-      @media screen and (max-width: $breakpoint-lg) {
+      @media screen and (max-width: $breakpoint-md) {
         margin-top: 32px;
       }
     }
@@ -18,7 +18,7 @@
     }
     .footer-icons {
       margin: 20px 0 52px;
-      @media screen and (max-width: $breakpoint-lg) {
+      @media screen and (max-width: $breakpoint-md) {
         margin-bottom: 32px;
       }
       .footer-icon {
@@ -53,7 +53,7 @@
     .footer-content:last-child {
       border: 0px;
     }
-    @media screen and (max-width: $breakpoint-lg) {
+    @media screen and (max-width: $breakpoint-md) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
