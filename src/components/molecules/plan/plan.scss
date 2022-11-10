@@ -2,6 +2,7 @@
 .plan {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 
   @media screen and (max-width: $breakpoint-md) {
     margin-bottom: 24px;
@@ -9,38 +10,27 @@
 
   .plan-title {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     background: $orange_zorba;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    font-family: $fontfamily-gothic;
     font-weight: 700;
-    font-size: 20px;
+    font-size: $fontsize-l;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     color: $white;
     padding: 20px 0;
   }
 
   .plan-item1 {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: $gray_desertStorm;
     border: 1px solid $gray_gainsboro;
-    font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
     align-items: center;
+    border-bottom: 0;
 
     .plan-fee {
       display: flex;
-      font-family: $fontfamily-gothic;
-      align-items: baseline;
 
       .plan-fee-price {
         margin-top: 24px;
@@ -57,23 +47,21 @@
     }
 
     .plan-fee-detail {
-      font-family: $fontfamily-gothic;
       font-size: $fontsize-s;
       margin-top: 16px;
     }
   }
 
   .plan-item2 {
-    box-sizing: border-box;
     justify-content: center;
     border: 1px solid $gray_gainsboro;
-    margin: -1px 0px;
-    font-family: $fontfamily-gothic;
+    border-bottom: 0;
     font-size: $fontsize-s;
-    display: flex;
-    align-items: center;
     padding: 20px 10px;
     text-align: center;
+  }
+  .plan-item2:nth-child(6) {
+    border-bottom: 1px solid $gray_gainsboro;
   }
 }
 
