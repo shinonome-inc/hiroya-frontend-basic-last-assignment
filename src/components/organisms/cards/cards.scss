@@ -1,0 +1,8 @@
+@use "../../variables" as *;
+
+.cards .card {
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
+}
