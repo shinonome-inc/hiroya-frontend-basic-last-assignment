@@ -1,0 +1,73 @@
+@use "../../variables" as *;
+
+.header {
+  padding: 0;
+  background-color: $black;
+
+  .header-logo {
+    margin: 15px auto 15px 16px;
+    height: 21px;
+    width: 120px;
+  }
+
+  .humberger-bar {
+    padding: 0;
+    margin: 20px 16px 20px auto;
+  }
+
+  .header-menu {
+    .header-contents {
+      gap: 30px;
+      padding: 15px;
+      .header-content {
+        .nav-link {
+          color: $white;
+          padding: 0;
+        }
+      }
+      .header-content .header-concept {
+        display: flex;
+        justify-content: space-between;
+      }
+      .dropdown-menu {
+        background-color: $black;
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .concept-menu {
+          padding-left: 12px;
+          border-radius: 0;
+          transition: all 0.3s ease;
+          .dropdown-style {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+              background-color: $orange_bistre;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    height: 90px;
+    .header-logo {
+      margin: 33px auto 33px 30px;
+      height: 24px;
+      width: 140px;
+    }
+    .header-menu .header-contents {
+      margin-left: auto;
+      padding-right: 50px;
+      display: flex;
+      gap: 40px;
+      .header-content .dropdown-menu {
+        display: none;
+      }
+    }
+  }
+}
