@@ -15,10 +15,10 @@
     }
   }
 
-  .plans-button {
+  .button {
     display: flex;
     justify-content: center;
-    margin: 35px auto 100px;
+    margin: 35px auto;
     @media screen and (max-width: $breakpoint-md) {
       margin: 24px auto 35px;
     }
