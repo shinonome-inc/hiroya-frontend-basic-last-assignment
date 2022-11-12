@@ -13,33 +13,36 @@
   .humberger-bar {
     padding: 0;
     margin: 20px 16px 20px auto;
+    outline: none;
   }
 
   .header-menu {
     .header-contents {
       gap: 30px;
       padding: 15px;
+      font-size: $fontsize-s;
       .header-content {
         .nav-link {
           color: $white;
           padding: 0;
         }
       }
-      .header-content .header-concept {
+      .header-content .header-concept-menu {
         display: flex;
         justify-content: space-between;
+        .header-plusbutton {
+          outline: none;
+        }
       }
       .dropdown-menu {
         background-color: $black;
-        margin-top: 30px;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
         .concept-menu {
+          margin-top: 30px;
           padding-left: 12px;
           border-radius: 0;
           transition: all 0.3s ease;
+          font-size: $fontsize-s;
           .dropdown-style {
             color: $white;
             text-decoration: none;
@@ -55,7 +58,7 @@
   @media screen and (min-width: $breakpoint-xl) {
     background-color: $black_50;
     height: 90px;
-    .header-logo {
+    .navbar-brand .header-logo {
       margin: 33px auto 33px 30px;
       height: 24px;
       width: 140px;
@@ -65,9 +68,6 @@
       padding-right: 50px;
       display: flex;
       gap: 40px;
-      .header-content .dropdown-menu {
-        display: none;
-      }
     }
   }
 }
