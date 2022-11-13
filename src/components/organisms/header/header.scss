@@ -18,16 +18,15 @@
 
   .header-menu {
     .header-contents {
-      gap: 30px;
-      padding: 15px;
       font-size: $fontsize-s;
       .header-content {
         .nav-link {
           color: $white;
           padding: 0;
+          padding: 15px 0 15px 16px;
         }
       }
-      .header-content .header-concept-menu {
+      .header-concept .header-concept-menu {
         display: flex;
         justify-content: space-between;
         .header-plusbutton {
@@ -38,17 +37,19 @@
         background-color: $black;
         padding: 0;
         .concept-menu {
-          margin-top: 30px;
-          padding-left: 12px;
+          padding: 15px 0 15px 28px;
           border-radius: 0;
           transition: all 0.3s ease;
           font-size: $fontsize-s;
+          cursor: pointer;
+          &:hover {
+            background-color: $orange_bistre;
+            transition: 0.2s;
+            transition-timing-function: ease;
+          }
           .dropdown-style {
             color: $white;
             text-decoration: none;
-            &:hover {
-              background-color: $orange_bistre;
-            }
           }
         }
       }
@@ -66,8 +67,33 @@
     .header-menu .header-contents {
       margin-left: auto;
       padding-right: 50px;
-      display: flex;
       gap: 40px;
+      .header-content {
+        .nav-link {
+          padding: 0;
+        }
+        :hover {
+          color: $gray_nobel;
+          transition: 0.2s;
+          transition-timing-function: ease;
+        }
+      }
+      .header-concept {
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+          visibility: visible;
+          .concept-menu {
+            padding: 0;
+            .dropdown-style {
+              padding: 0;
+            }
+          }
+        }
+      }
+      &:hover .dropdown-menu {
+        visibility: visible;
+      }
     }
   }
 }
