@@ -23,8 +23,7 @@ footer {
       color: $black;
       &:hover {
         color: $gray_nobel;
-        transition: 0.2s;
-        transition-timing-function: ease;
+        transition: 0.2s ease;
       }
     }
     .footer-icon:last-child {
@@ -54,8 +53,7 @@ footer {
         text-decoration: none;
         &:hover {
           color: $orange_bistre;
-          transition: 0.2s;
-          transition-timing-function: ease;
+          transition: 0.2s ease;
         }
       }
     }
