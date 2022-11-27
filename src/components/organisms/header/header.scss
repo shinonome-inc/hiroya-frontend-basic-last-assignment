@@ -33,9 +33,10 @@
           outline: none;
         }
       }
-      .dropdown-menu {
+      .dropdown {
         background-color: $black;
         padding: 0;
+        list-style: none;
         .concept-menu {
           padding: 15px 0 15px 28px;
           border-radius: 0;
@@ -79,14 +80,17 @@
         }
       }
       .header-concept {
-        .dropdown-menu {
+        .dropdown {
           display: flex;
           flex-direction: column;
-          visibility: visible;
+          visibility: hidden;
+          align-items: flex-start;
+          width: 220px;
+          margin-top: 35px;
           .concept-menu {
-            padding: 0;
+            padding: 18px;
+            width: 100%;
             .dropdown-style {
-              padding: 0;
             }
           }
         }
