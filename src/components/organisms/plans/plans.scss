@@ -1,20 +1,23 @@
 @use "../../variables" as *;
-
 .plans {
-  .message {
-    padding-top: 0;
-    .message-title {
-      color: $orange_bistre;
+  padding: 0 24px 0 24px;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0 114px;
+  }
+  .plans-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin-top: 0;
     }
   }
 
-  .plans-plans {
-    margin-bottom: 30px;
-    .row {
-      display: flex;
-      gap: 30px;
-      .plan {
-      }
+  .row {
+    gap: 15px;
+    flex-wrap: nowrap;
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
     }
   }
 }
