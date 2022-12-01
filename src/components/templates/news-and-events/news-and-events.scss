@@ -1,9 +1,31 @@
 @use "../../variables" as *;
+.news-and-events {
+  .news {
+    margin-bottom: 38px;
+    margin-bottom: 0;
 
-.news {
-  margin-bottom: 38px;
-}
+    .news-contents .news-content-link .news-content {
+      height: calc(402px / 5);
+    }
+    .information-list {
+      margin-bottom: 94px;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-bottom: 35px;
+      }
+    }
+  }
 
-.events .event-caption h3 {
-  font-weight: 400;
+  .events {
+    .event-caption h3 {
+      font-weight: 400;
+    }
+    .news-and-events-more {
+      margin-top: 0;
+      margin-bottom: 94px;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 16px;
+        margin-bottom: 92px;
+      }
+    }
+  }
 }
