@@ -45,9 +45,7 @@
           font-size: $fontsize-s;
           cursor: pointer;
           &:hover {
-            background-color: $orange_bistre;
-            transition: 0.2s;
-            transition-timing-function: ease;
+            transition: 0.2s ease;
           }
           .dropdown-style {
             color: $white;
@@ -66,38 +64,54 @@
       height: 24px;
       width: 140px;
     }
-    .header-menu .header-contents {
-      margin-left: auto;
-      padding-right: 50px;
-      gap: 40px;
-      .header-content {
-        .nav-link {
-          padding: 0;
-        }
-        :hover {
-          color: $gray_nobel;
-          transition: 0.2s;
-          transition-timing-function: ease;
-        }
-      }
-      .header-concept {
-        .concept-dropdown {
+    .header-menu {
+      height: 100%;
+      .header-contents {
+        height: 100%;
+        margin-left: auto;
+        padding-right: 30px;
+
+        .header-content {
           display: flex;
-          flex-direction: column;
-          visibility: hidden;
-          align-items: flex-start;
-          width: 220px;
-          margin-top: 35px;
-          .concept-menu {
-            padding: 18px;
-            width: 100%;
-            .dropdown-style {
-            }
+          align-items: center;
+
+          .nav-link {
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+          }
+          &:hover .nav-link {
+            color: $gray_nobel;
+            transition: 0.2s;
+            transition-timing-function: ease;
           }
         }
-      }
-      &:hover .concept-dropdown {
-        visibility: visible;
+
+        .header-concept {
+          position: relative;
+          .header-concept-menu {
+            height: 100%;
+          }
+          .concept-dropdown {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 220px;
+            display: none;
+            .concept-menu {
+              padding: 18px;
+              width: 100%;
+            }
+          }
+          &:hover .concept-dropdown {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $orange_bistre;
+            transition: 0.2s ease;
+          }
+        }
       }
     }
   }
