@@ -101,6 +101,10 @@
             .concept-menu {
               padding: 18px;
               width: 100%;
+              &:hover {
+                transition: 0.2s ease;
+                background-color: $orange_bistre;
+              }
             }
           }
           &:hover .concept-dropdown {
@@ -108,8 +112,6 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: $orange_bistre;
-            transition: 0.2s ease;
           }
         }
       }
