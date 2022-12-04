@@ -1,17 +1,20 @@
 @use "../../variables" as *;
-.row {
-  gap: 15px;
-  flex-wrap: nowrap;
-  justify-content: center;
-  @media screen and (max-width: $breakpoint-md) {
-    flex-direction: column;
+.plans {
+  box-sizing: content-box;
+  .plans-plans .row {
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    @media screen and (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
   }
-}
-.plans-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  @media screen and (max-width: $breakpoint-md) {
-    margin-top: 0;
+  .plans-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    @media screen and (max-width: $breakpoint-md) {
+      margin-top: 0;
+    }
   }
 }
