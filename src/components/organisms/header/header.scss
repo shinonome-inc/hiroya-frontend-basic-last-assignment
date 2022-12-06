@@ -5,8 +5,7 @@
   background-color: $black;
 
   .header-logo {
-    margin: 15px auto 15px 16px;
-    height: 21px;
+    margin-left: 16px;
     width: 120px;
   }
 
@@ -60,8 +59,7 @@
     background-color: $black_50;
     height: 90px;
     .navbar-brand .header-logo {
-      margin: 33px auto 33px 30px;
-      height: 24px;
+      margin-left: 30px;
       width: 140px;
     }
     .header-menu {
