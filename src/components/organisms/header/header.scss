@@ -1,0 +1,118 @@
+@use "../../variables" as *;
+
+.header {
+  padding: 0;
+  background-color: $black;
+
+  .header-logo {
+    margin-left: 16px;
+    width: 120px;
+  }
+
+  .humberger-bar {
+    padding: 0;
+    margin: 20px 16px 20px auto;
+    outline: none;
+  }
+
+  .header-menu {
+    .header-contents {
+      font-size: $fontsize-s;
+      .header-content {
+        .nav-link {
+          color: $white;
+          padding: 0;
+          padding: 15px 0 15px 16px;
+        }
+      }
+      .header-concept .header-concept-menu {
+        display: flex;
+        justify-content: space-between;
+        .header-plusbutton {
+          outline: none;
+        }
+      }
+      .concept-dropdown {
+        background-color: $black;
+        padding: 0;
+        list-style: none;
+
+        .concept-menu {
+          padding: 15px 0 15px 28px;
+          border-radius: 0;
+          transition: all 0.3s ease;
+          font-size: $fontsize-s;
+          cursor: pointer;
+          &:hover {
+            transition: 0.2s ease;
+          }
+          .dropdown-style {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+    height: 90px;
+    .navbar-brand .header-logo {
+      margin-left: 30px;
+      width: 140px;
+    }
+    .header-menu {
+      height: 100%;
+      .header-contents {
+        height: 100%;
+        margin-left: auto;
+        padding-right: 30px;
+
+        .header-content {
+          display: flex;
+          align-items: center;
+
+          .nav-link {
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+          }
+          &:hover .nav-link {
+            color: $gray_nobel;
+            transition: 0.2s;
+            transition-timing-function: ease;
+          }
+        }
+
+        .header-concept {
+          position: relative;
+          .header-concept-menu {
+            height: 100%;
+          }
+          .concept-dropdown {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 220px;
+            display: none;
+            .concept-menu {
+              padding: 18px;
+              width: 100%;
+              &:hover {
+                transition: 0.2s ease;
+                background-color: $orange_bistre;
+              }
+            }
+          }
+          &:hover .concept-dropdown {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
