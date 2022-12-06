@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+.plans {
+  margin-bottom: 100px;
+  .plans-plans {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    .plan {
+      width: 100%;
+    }
+  }
+  .plans-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 35px;
+    .plans-plans {
+      flex-direction: column;
+      gap: 0;
+    }
+    .plans-button {
+      margin-top: 0;
+    }
+  }
+}
