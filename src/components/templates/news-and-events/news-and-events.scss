@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 .news-and-events {
-  margin-bottom: 94px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: $white_smoke;
   .news {
     margin-bottom: 0;
     .news-contents .news-content-link .news-content {
@@ -24,7 +26,7 @@
       margin-bottom: 35px;
     }
     .events {
-      margin-bottom: 92px;
+      margin-bottom: 57px;
     }
   }
 }
