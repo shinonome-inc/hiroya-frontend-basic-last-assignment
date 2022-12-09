@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+.news-and-events {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: $white_smoke;
+  .news {
+    margin-bottom: 0;
+    .news-contents .news-content-link .news-content {
+      height: calc(401px / 5);
+    }
+  }
+  .events {
+    .event-caption h3 {
+      font-weight: 400;
+    }
+    .news-and-events-more {
+      margin-top: 0;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 16px;
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-lg) {
+    margin-bottom: 92px;
+    .news {
+      margin-bottom: 35px;
+    }
+    .events {
+      margin-bottom: 57px;
+    }
+  }
+}
