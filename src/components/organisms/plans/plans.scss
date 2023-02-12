@@ -1,5 +1,8 @@
 @use "../../variables" as *;
 .plans {
+  .message {
+    background-color: $white;
+  }
   margin-bottom: 100px;
   .plans-plans {
     display: flex;
