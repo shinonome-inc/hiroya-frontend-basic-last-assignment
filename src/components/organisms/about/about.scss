@@ -1,8 +1,8 @@
 @use "../../variables" as *;
 .about {
-  margin: 100px 135px 100px;
+  padding: 100px 135px 100px;
   @media (max-width: $breakpoint-lg) {
-    margin: 40px 16px 40px;
+    padding: 40px 16px 40px;
   }
 
   .about-img-table {
