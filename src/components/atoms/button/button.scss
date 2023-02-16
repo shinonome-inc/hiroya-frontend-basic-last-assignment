@@ -22,7 +22,7 @@
   transition: 0.2s;
   transition-timing-function: ease;
 
-  @media screen and (max-width: $breakpoint-lg) {
+  @media screen and (max-width: $breakpoint-xl) {
     width: 150px;
     height: 55px;
   }

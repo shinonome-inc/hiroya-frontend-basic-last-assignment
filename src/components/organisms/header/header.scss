@@ -58,6 +58,8 @@
   @media screen and (min-width: $breakpoint-xl) {
     background-color: $black_50;
     height: 90px;
+    transform: translate(0px, 90px);
+    margin-top: -90px;
     .navbar-brand .header-logo {
       margin-left: 30px;
       width: 140px;
