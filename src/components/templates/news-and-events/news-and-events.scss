@@ -1,34 +1,38 @@
 @use "../../variables" as *;
 .news-and-events {
-  padding: 56px 16px;
-  @media screen and (max-width: $breakpoint-lg) {
-    padding: 56px 135px;
-  }
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-bottom: 0;
   background-color: $white_smoke;
-  .news {
-    margin-bottom: 0;
-    .news-contents .news-content-link .news-content {
-      height: calc(401px / 5);
-    }
-  }
-  .events {
-    .event-caption h3 {
-      font-weight: 400;
-    }
-    .news-and-events-more {
-      margin-top: 0;
-      @media screen and (max-width: $breakpoint-lg) {
-        margin-top: 16px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+
+  .container {
+    .news {
+      margin-bottom: 0;
+      .news-contents .news-content-link .news-content {
+        height: calc(401px / 5);
       }
     }
-  }
-  @media screen and (max-width: $breakpoint-lg) {
-    margin-bottom: 92px;
-    .news {
-      margin-bottom: 35px;
-    }
     .events {
-      margin-bottom: 57px;
+      .event-caption h3 {
+        font-weight: 400;
+      }
+      .news-and-events-more {
+        margin-top: 0;
+        @media screen and (max-width: $breakpoint-lg) {
+          margin-top: 16px;
+        }
+      }
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-bottom: 92px;
+      .news {
+        margin-bottom: 35px;
+      }
+      .events {
+        margin-bottom: 57px;
+      }
     }
   }
 }
