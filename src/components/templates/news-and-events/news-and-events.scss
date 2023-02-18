@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .news-and-events {
   padding-top: 56px;
-  padding-bottom: 56px;
+  padding-bottom: 41px;
   margin-bottom: 0;
   background-color: $white_smoke;
 
@@ -24,12 +24,8 @@
       }
     }
     @media screen and (max-width: $breakpoint-lg) {
-      margin-bottom: 92px;
       .news {
         margin-bottom: 35px;
-      }
-      .events {
-        margin-bottom: 57px;
       }
     }
   }
