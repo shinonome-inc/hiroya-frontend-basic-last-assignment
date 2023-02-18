@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .news-and-events {
   padding-top: 56px;
-  padding-bottom: 41px;
+  padding-bottom: 56px;
   margin-bottom: 0;
   background-color: $white_smoke;
 
@@ -13,6 +13,7 @@
       }
     }
     .events {
+      margin-bottom: 0;
       .event-caption h3 {
         font-weight: 400;
       }
